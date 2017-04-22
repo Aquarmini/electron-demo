@@ -1,10 +1,10 @@
 const {
     app,
     BrowserWindow
-} = require('electron')
-const path = require('path')
-const url = require('url')
-
+} = require('electron');
+const path = require('path');
+const url = require('url');
+const config = require('./config.js');
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
 let win
@@ -18,7 +18,7 @@ function createWindow() {
 
     // 加载应用的 index.html。
     win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+        pathname: path.join(config.application.viewsDir, 'index.html'),
         protocol: 'file:',
         slashes: true
     }))
