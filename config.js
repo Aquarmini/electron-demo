@@ -3,9 +3,8 @@
  */
 var rootDir = __dirname;
 module.exports = {
-    application: {
-        controllersDir: rootDir + "/controllers",
-        viewsDir: rootDir + "/views",
-    }
+	application: {
+		appDir: rootDir + "/app",
+	}
 
 }
