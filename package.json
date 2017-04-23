@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/limingxinleo/electron-demo/issues"
   },
-  "homepage": "https://github.com/limingxinleo/electron-demo#readme"
+  "homepage": "https://github.com/limingxinleo/electron-demo#readme",
+  "dependencies": {}
 }
