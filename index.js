@@ -21,7 +21,7 @@ function createWindow() {
         pathname: path.join(config.application.appDir, 'index.html'),
         protocol: 'file:',
         slashes: true
-    }))
+    }));
 
     // 打开开发者工具。
     win.webContents.openDevTools()

@@ -1,10 +1,7 @@
 const config = require('../config.js');
-var btn = document.getElementById('sub');
-btn.onclick = function() {
-	var mobile = document.getElementById('mobile').value;
-	var text = document.getElementById('output');
-	text.innerHTML = mobile;
-};
-
-// console.log(text);
-// text.innerHTML = "111";
+const $ = require('../assets/jquery/jquery.min.js');
+$("#sub").click(function () {
+    var mobile = $("#mobile").val();
+    $("#output").append("<div>" + mobile + "</div>");
+    console.log(versions);
+});
