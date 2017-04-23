@@ -1,5 +1,5 @@
 const config = require('../config.js');
-const $ = require('../assets/jquery/jquery.min.js');
+const $ = require('jquery');
 $("#sub").click(function () {
     var mobile = $("#mobile").val();
     $("#output").append("<div>" + mobile + "</div>");
